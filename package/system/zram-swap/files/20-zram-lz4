@@ -1,0 +1,6 @@
+#!/bin/sh
+# Set LZ4 as default zram compression algorithm when not configured
+[ -z "$(uci -q get system.@system[0].zram_comp_algo)" ] && {
+	uci set system.@system[0].zram_comp_algo='lz4'
+	uci commit system
+}
