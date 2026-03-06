@@ -10,7 +10,7 @@
 +	# Channel  1 - 13.
  	# Channel 14. Only JP enables this and for 802.11b only
 -	(2474 - 2494 @ 20), (20), NO-IR, NO-OFDM
-+	(2400 - 2494 @ 40), (24)
++	(2400 - 2494 @ 40), (36)
  	# Channel 36 - 48
 -	(5170 - 5250 @ 80), (20), AUTO-BW
  	# Channel 52 - 64
