@@ -1,0 +1,11 @@
+#!/bin/sh
+# Set wireless TX power to 36 dBm for all radios
+
+[ ! -e /etc/config/wireless ] && exit 0
+
+for i in $(uci show wireless | grep '=wifi-device$' | cut -d. -f2 | cut -d= -f1); do
+	uci set wireless.${i}.txpower='36'
+done
+
+uci commit wireless
+exit 0
