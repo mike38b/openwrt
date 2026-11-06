@@ -1,0 +1,769 @@
+1,100c1,9
+< CONFIG_TARGET_mvebu=y
+< CONFIG_TARGET_mvebu_cortexa9=y
+< CONFIG_TARGET_mvebu_cortexa9_DEVICE_linksys_wrt3200acm=y
+< CONFIG_BUSYBOX_CUSTOM=y
+< CONFIG_AIRCRACK_NG_OPENSSL=y
+< CONFIG_AIRCRACK_NG_OPTIMIZE_SPEED=y
+< # CONFIG_BUSYBOX_CONFIG_ASH_RANDOM_SUPPORT is not set
+< CONFIG_BUSYBOX_CONFIG_BUNZIP2=y
+< # CONFIG_BUSYBOX_CONFIG_DATE is not set
+< CONFIG_BUSYBOX_CONFIG_FEATURE_BZIP2_DECOMPRESS=y
+< CONFIG_BUSYBOX_CONFIG_FEATURE_DEFAULT_PASSWD_ALGO="md5"
+< # CONFIG_BUSYBOX_CONFIG_FEATURE_EDITING_SAVE_ON_EXIT is not set
+< CONFIG_BUSYBOX_CONFIG_FEATURE_PREFER_IPV4_ADDRESS=y
+< CONFIG_BUSYBOX_CONFIG_FEATURE_REVERSE_SEARCH=y
+< CONFIG_BUSYBOX_CONFIG_FEATURE_TOP_INTERACTIVE=y
+< # CONFIG_BUSYBOX_CONFIG_GREP is not set
+< CONFIG_BUSYBOX_CONFIG_LAST_SUPPORTED_WCHAR=0
+< # CONFIG_BUSYBOX_CONFIG_LESS is not set
+< # CONFIG_BUSYBOX_CONFIG_NC is not set
+< # CONFIG_BUSYBOX_CONFIG_PS is not set
+< CONFIG_BUSYBOX_CONFIG_PSTREE=y
+< # CONFIG_BUSYBOX_CONFIG_RESIZE is not set
+< # CONFIG_BUSYBOX_CONFIG_SETSID is not set
+< CONFIG_BUSYBOX_CONFIG_SHA1SUM=y
+< CONFIG_BUSYBOX_CONFIG_SHA3SUM=y
+< CONFIG_BUSYBOX_CONFIG_SHA512SUM=y
+< CONFIG_BUSYBOX_CONFIG_SUBST_WCHAR=0
+< # CONFIG_BUSYBOX_CONFIG_TASKSET is not set
+< CONFIG_BUSYBOX_CONFIG_UNICODE_SUPPORT=y
+< CONFIG_BUSYBOX_CONFIG_WATCH=y
+< CONFIG_HTOP_LMSENSORS=y
+< # CONFIG_KERNEL_BTRFS_FS_POSIX_ACL is not set
+< # CONFIG_KERNEL_CIFS_ACL is not set
+< # CONFIG_KERNEL_EROFS_FS_POSIX_ACL is not set
+< # CONFIG_KERNEL_EXT4_FS_POSIX_ACL is not set
+< # CONFIG_KERNEL_EXT4_FS_SECURITY is not set
+< # CONFIG_KERNEL_F2FS_FS_POSIX_ACL is not set
+< # CONFIG_KERNEL_F2FS_FS_SECURITY is not set
+< # CONFIG_KERNEL_FS_POSIX_ACL is not set
+< # CONFIG_KERNEL_HFSPLUS_FS_POSIX_ACL is not set
+< # CONFIG_KERNEL_HFS_FS_POSIX_ACL is not set
+< CONFIG_KERNEL_IO_URING=y
+< # CONFIG_KERNEL_JFFS2_FS_POSIX_ACL is not set
+< # CONFIG_KERNEL_JFFS2_FS_SECURITY is not set
+< # CONFIG_KERNEL_JFS_POSIX_ACL is not set
+< # CONFIG_KERNEL_NET_L3_MASTER_DEV is not set
+< # CONFIG_KERNEL_NFS_ACL_SUPPORT is not set
+< # CONFIG_KERNEL_REISER_FS_POSIX_ACL is not set
+< # CONFIG_KERNEL_TMPFS_POSIX_ACL is not set
+< # CONFIG_KERNEL_UBIFS_FS_SECURITY is not set
+< # CONFIG_KERNEL_WERROR is not set
+< # CONFIG_KERNEL_XFS_POSIX_ACL is not set
+< CONFIG_LIBCURL_COOKIES=y
+< CONFIG_LIBCURL_FILE=y
+< CONFIG_LIBCURL_FTP=y
+< CONFIG_LIBCURL_HTTP=y
+< CONFIG_LIBCURL_HTTP2=y
+< CONFIG_LIBCURL_NO_SMB="!"
+< CONFIG_LIBCURL_OPENSSL=y
+< CONFIG_LIBCURL_PROXY=y
+< CONFIG_LIBCURL_UNIX_SOCKETS=y
+< CONFIG_LIBSSH2_OPENSSL=y
+< # CONFIG_LUA_ECO_MBEDTLS is not set
+< CONFIG_LUA_ECO_OPENSSL=y
+< CONFIG_OPENSSL_ENGINE=y
+< CONFIG_OPENSSL_ENGINE_BUILTIN=y
+< CONFIG_OPENSSL_ENGINE_BUILTIN_AFALG=y
+< CONFIG_OPENSSL_ENGINE_BUILTIN_DEVCRYPTO=y
+< CONFIG_OPENSSL_OPTIMIZE_SPEED=y
+< CONFIG_OPENSSL_PREFER_CHACHA_OVER_GCM=y
+< CONFIG_OPENSSL_WITH_ASM=y
+< CONFIG_OPENSSL_WITH_CHACHA_POLY1305=y
+< CONFIG_OPENSSL_WITH_CMS=y
+< CONFIG_OPENSSL_WITH_DEPRECATED=y
+< CONFIG_OPENSSL_WITH_ERROR_MESSAGES=y
+< CONFIG_OPENSSL_WITH_PSK=y
+< CONFIG_OPENSSL_WITH_SRP=y
+< CONFIG_OPENSSL_WITH_TLS13=y
+< CONFIG_OPENVPN_openssl_ENABLE_FRAGMENT=y
+< CONFIG_OPENVPN_openssl_ENABLE_LZ4=y
+< CONFIG_OPENVPN_openssl_ENABLE_LZO=y
+< CONFIG_OPENVPN_openssl_ENABLE_PORT_SHARE=y
+< CONFIG_OPENVPN_openssl_ENABLE_SMALL=y
+< CONFIG_PACKAGE_DiAssist=y
+< CONFIG_PACKAGE_NTFS-3G_HAS_PROBE=y
+< CONFIG_PACKAGE_acme=y
+< CONFIG_PACKAGE_acme-acmesh=y
+< CONFIG_PACKAGE_acme-acmesh-dnsapi=y
+< CONFIG_PACKAGE_acme-common=y
+< CONFIG_PACKAGE_adb=y
+< CONFIG_PACKAGE_aircrack-ng=y
+< CONFIG_PACKAGE_airmon-ng=y
+< # CONFIG_PACKAGE_apk-mbedtls is not set
+< CONFIG_PACKAGE_arp-scan=y
+< CONFIG_PACKAGE_arp-scan-database=y
+< CONFIG_PACKAGE_arptables-legacy=y
+< CONFIG_PACKAGE_arptables-nft=y
+< CONFIG_PACKAGE_atop=y
+< CONFIG_PACKAGE_attendedsysupgrade-common=y
+< CONFIG_PACKAGE_blkid=y
+---
+> CONFIG_PACKAGE_attr=y
+> CONFIG_PACKAGE_avahi-dbus-daemon=y
+> CONFIG_PACKAGE_banip=y
+> CONFIG_PACKAGE_base-files=y
+> CONFIG_PACKAGE_bash=y
+> CONFIG_PACKAGE_bcp38=y
+> CONFIG_PACKAGE_bind-client=y
+> CONFIG_PACKAGE_bind-dig=y
+> CONFIG_PACKAGE_bind-libs=y
+102,103c11,15
+< CONFIG_PACKAGE_bsdtar=y
+< CONFIG_PACKAGE_cfdisk=y
+---
+> CONFIG_PACKAGE_blockd=y
+> CONFIG_PACKAGE_blockdev=y
+> CONFIG_PACKAGE_busybox=y
+> CONFIG_PACKAGE_ca-bundle=y
+> CONFIG_PACKAGE_ca-certificates=y
+105,106c17,25
+< CONFIG_PACKAGE_chat=y
+< CONFIG_PACKAGE_comgt=y
+---
+> CONFIG_PACKAGE_collectd=y
+> CONFIG_PACKAGE_collectd-mod-cpu=y
+> CONFIG_PACKAGE_collectd-mod-interface=y
+> CONFIG_PACKAGE_collectd-mod-iwinfo=y
+> CONFIG_PACKAGE_collectd-mod-load=y
+> CONFIG_PACKAGE_collectd-mod-memory=y
+> CONFIG_PACKAGE_collectd-mod-network=y
+> CONFIG_PACKAGE_collectd-mod-rrdtool=y
+> CONFIG_PACKAGE_conntrack=y
+108c27
+< CONFIG_PACKAGE_coreutils-date=y
+---
+> CONFIG_PACKAGE_cryptsetup=y
+110,112c29,43
+< CONFIG_PACKAGE_diffutils=y
+< # CONFIG_PACKAGE_dnsmasq is not set
+< CONFIG_PACKAGE_dnsmasq-dhcpv6=y
+---
+> CONFIG_PACKAGE_dbus=y
+> CONFIG_PACKAGE_ddns-scripts=y
+> CONFIG_PACKAGE_ddns-scripts-cloudflare=y
+> CONFIG_PACKAGE_ddns-scripts-cnkuai=y
+> CONFIG_PACKAGE_ddns-scripts-digitalocean=y
+> CONFIG_PACKAGE_ddns-scripts-freedns=y
+> CONFIG_PACKAGE_ddns-scripts-gandi=y
+> CONFIG_PACKAGE_ddns-scripts-godaddy=y
+> CONFIG_PACKAGE_ddns-scripts-noip=y
+> CONFIG_PACKAGE_ddns-scripts-nsupdate=y
+> CONFIG_PACKAGE_ddns-scripts-route53=y
+> CONFIG_PACKAGE_ddns-scripts-services=y
+> CONFIG_PACKAGE_dmesg=y
+> CONFIG_PACKAGE_dnsmasq-full=y
+> CONFIG_PACKAGE_dropbear=y
+114,128c45,52
+< CONFIG_PACKAGE_ebtables-legacy=y
+< CONFIG_PACKAGE_ebtables-legacy-utils=y
+< CONFIG_PACKAGE_ebtables-nft=y
+< CONFIG_PACKAGE_etherwake=y
+< CONFIG_PACKAGE_ethtool=y
+< CONFIG_PACKAGE_fuse3-utils=y
+< CONFIG_PACKAGE_g-net-com=y
+< CONFIG_PACKAGE_g-net-speed=y
+< CONFIG_PACKAGE_g_api=y
+< CONFIG_PACKAGE_g_dhcpd=y
+< CONFIG_PACKAGE_g_relay=y
+< CONFIG_PACKAGE_g_resource_builder=y
+< CONFIG_PACKAGE_gdb=y
+< CONFIG_PACKAGE_gdbserver=y
+< CONFIG_PACKAGE_gfc-file-compare=y
+---
+> CONFIG_PACKAGE_eject=y
+> CONFIG_PACKAGE_fdisk=y
+> CONFIG_PACKAGE_firewall=y
+> CONFIG_PACKAGE_fstools=y
+> CONFIG_PACKAGE_fwtool=y
+> CONFIG_PACKAGE_getopt=y
+> CONFIG_PACKAGE_getrandom=y
+> CONFIG_PACKAGE_giflib-utils=y
+131c55,57
+< CONFIG_PACKAGE_gsr-statistic-restore=y
+---
+> CONFIG_PACKAGE_gzip=y
+> CONFIG_PACKAGE_hd-idle=y
+> CONFIG_PACKAGE_hdparm=y
+133c59
+< CONFIG_PACKAGE_hping3=y
+---
+> CONFIG_PACKAGE_hostapd-common=y
+135d60
+< CONFIG_PACKAGE_httpstorm=y
+137,138c62,63
+< CONFIG_PACKAGE_ifuse=y
+< CONFIG_PACKAGE_img2vhd=y
+---
+> CONFIG_PACKAGE_igmpproxy=y
+> CONFIG_PACKAGE_iodine=y
+140,143c65
+< CONFIG_PACKAGE_ip6tables-extra=y
+< CONFIG_PACKAGE_ip6tables-mod-nat=y
+< CONFIG_PACKAGE_ip6tables-nft=y
+< CONFIG_PACKAGE_ip6tables-zz-legacy=y
+---
+> CONFIG_PACKAGE_ip6tables=y
+145,148c67,69
+< CONFIG_PACKAGE_iptables-mod-chaos=y
+< CONFIG_PACKAGE_iptables-mod-delude=y
+< CONFIG_PACKAGE_iptables-mod-fuzzy=y
+< CONFIG_PACKAGE_iptables-mod-ipmark=y
+---
+> CONFIG_PACKAGE_iptables=y
+> CONFIG_PACKAGE_iptables-mod-account=y
+> CONFIG_PACKAGE_iptables-mod-conntrack-extra=y
+150,158c71,72
+< CONFIG_PACKAGE_iptables-mod-iprange=y
+< CONFIG_PACKAGE_iptables-mod-tarpit=y
+< CONFIG_PACKAGE_iptables-mod-tee=y
+< CONFIG_PACKAGE_iptables-nft=y
+< CONFIG_PACKAGE_iptables-zz-legacy=y
+< CONFIG_PACKAGE_iputils-arping=y
+< # CONFIG_PACKAGE_iw is not set
+< CONFIG_PACKAGE_iw-full=y
+< CONFIG_PACKAGE_iwcap=y
+---
+> CONFIG_PACKAGE_iptables-mod-nat-extra=y
+> CONFIG_PACKAGE_iw=y
+160,161c74,98
+< CONFIG_PACKAGE_kmod-arptables=y
+< CONFIG_PACKAGE_kmod-crypto-authenc=y
+---
+> CONFIG_PACKAGE_jshn=y
+> CONFIG_PACKAGE_jsonfilter=y
+> CONFIG_PACKAGE_kernel=y
+> CONFIG_PACKAGE_kmod-ata-core=y
+> CONFIG_PACKAGE_kmod-bluetooth=y
+> CONFIG_PACKAGE_kmod-br-netfilter=y
+> CONFIG_PACKAGE_kmod-btmrvl=y
+> CONFIG_PACKAGE_kmod-cfg80211=y
+> CONFIG_PACKAGE_kmod-crypto-acompress=y
+> CONFIG_PACKAGE_kmod-crypto-aead=y
+> CONFIG_PACKAGE_kmod-crypto-cmac=y
+> CONFIG_PACKAGE_kmod-crypto-crc32c=y
+> CONFIG_PACKAGE_kmod-crypto-ecb=y
+> CONFIG_PACKAGE_kmod-crypto-ecdh=y
+> CONFIG_PACKAGE_kmod-crypto-gf128=y
+> CONFIG_PACKAGE_kmod-crypto-hash=y
+> CONFIG_PACKAGE_kmod-crypto-hmac=y
+> CONFIG_PACKAGE_kmod-crypto-kpp=y
+> CONFIG_PACKAGE_kmod-crypto-manager=y
+> CONFIG_PACKAGE_kmod-crypto-md5=y
+> CONFIG_PACKAGE_kmod-crypto-misc=y
+> CONFIG_PACKAGE_kmod-crypto-null=y
+> CONFIG_PACKAGE_kmod-crypto-pcompress=y
+> CONFIG_PACKAGE_kmod-crypto-rng=y
+> CONFIG_PACKAGE_kmod-crypto-seqiv=y
+164,170c101,104
+< CONFIG_PACKAGE_kmod-cryptodev=y
+< CONFIG_PACKAGE_kmod-dma-buf=y
+< # CONFIG_PACKAGE_kmod-dsa is not set
+< # CONFIG_PACKAGE_kmod-dsa-mv88e6xxx is not set
+< CONFIG_PACKAGE_kmod-ebtables=y
+< CONFIG_PACKAGE_kmod-ebtables-ipv4=y
+< CONFIG_PACKAGE_kmod-ebtables-ipv6=y
+---
+> CONFIG_PACKAGE_kmod-crypto-xts=y
+> CONFIG_PACKAGE_kmod-dax=y
+> CONFIG_PACKAGE_kmod-dm=y
+> CONFIG_PACKAGE_kmod-fs-autofs4=y
+173,175c107
+< CONFIG_PACKAGE_kmod-fs-msdos=y
+< CONFIG_PACKAGE_kmod-fs-ntfs3=y
+< CONFIG_PACKAGE_kmod-fs-vfat=y
+---
+> CONFIG_PACKAGE_kmod-fs-ntfs=y
+176a109,117
+> CONFIG_PACKAGE_kmod-gpio-button-hotplug=y
+> CONFIG_PACKAGE_kmod-hid=y
+> CONFIG_PACKAGE_kmod-hwmon-core=y
+> CONFIG_PACKAGE_kmod-hwmon-drivetemp=y
+> CONFIG_PACKAGE_kmod-hwmon-gpiofan=y
+> CONFIG_PACKAGE_kmod-i2c-core=y
+> CONFIG_PACKAGE_kmod-ifb=y
+> CONFIG_PACKAGE_kmod-input-core=y
+> CONFIG_PACKAGE_kmod-input-evdev=y
+178,179c119
+< CONFIG_PACKAGE_kmod-ip6tables-extra=y
+< CONFIG_PACKAGE_kmod-ipt-chaos=y
+---
+> CONFIG_PACKAGE_kmod-ipt-account=y
+181a122,123
+> CONFIG_PACKAGE_kmod-ipt-conntrack-extra=y
+> CONFIG_PACKAGE_kmod-ipt-conntrack-label=y
+183,185c125
+< CONFIG_PACKAGE_kmod-ipt-delude=y
+< CONFIG_PACKAGE_kmod-ipt-fuzzy=y
+< CONFIG_PACKAGE_kmod-ipt-ipmark=y
+---
+> CONFIG_PACKAGE_kmod-ipt-geoip=y
+187c127
+< CONFIG_PACKAGE_kmod-ipt-iprange=y
+---
+> CONFIG_PACKAGE_kmod-ipt-ipsec=y
+190c130
+< CONFIG_PACKAGE_kmod-ipt-nat6=y
+---
+> CONFIG_PACKAGE_kmod-ipt-nat-extra=y
+192,199c132,148
+< CONFIG_PACKAGE_kmod-ipt-tarpit=y
+< CONFIG_PACKAGE_kmod-ipt-tee=y
+< # CONFIG_PACKAGE_kmod-lib-crc-ccitt is not set
+< # CONFIG_PACKAGE_kmod-libphy is not set
+< CONFIG_PACKAGE_kmod-media-controller=y
+< CONFIG_PACKAGE_kmod-mii=y
+< # CONFIG_PACKAGE_kmod-net-selftests is not set
+< CONFIG_PACKAGE_kmod-nf-dup-inet=y
+---
+> CONFIG_PACKAGE_kmod-ipt-raw=y
+> CONFIG_PACKAGE_kmod-l2tp=y
+> CONFIG_PACKAGE_kmod-lib-crc-ccitt=y
+> CONFIG_PACKAGE_kmod-lib-crc16=y
+> CONFIG_PACKAGE_kmod-lib-crc32c=y
+> CONFIG_PACKAGE_kmod-lib-lz4=y
+> CONFIG_PACKAGE_kmod-lib-lzo=y
+> CONFIG_PACKAGE_kmod-linkstation-poweroff=y
+> CONFIG_PACKAGE_kmod-mac80211=y
+> CONFIG_PACKAGE_kmod-macremapper=y
+> CONFIG_PACKAGE_kmod-mmc=y
+> CONFIG_PACKAGE_kmod-mwifiex-sdio=y
+> CONFIG_PACKAGE_kmod-mwlwifi=y
+> CONFIG_PACKAGE_kmod-nf-conntrack=y
+> CONFIG_PACKAGE_kmod-nf-conntrack-netlink=y
+> CONFIG_PACKAGE_kmod-nf-conntrack6=y
+> CONFIG_PACKAGE_kmod-nf-flow=y
+201a151
+> CONFIG_PACKAGE_kmod-nf-nat=y
+203,205c153,156
+< CONFIG_PACKAGE_kmod-nft-arp=y
+< CONFIG_PACKAGE_kmod-nft-bridge=y
+< CONFIG_PACKAGE_kmod-nft-compat=y
+---
+> CONFIG_PACKAGE_kmod-nf-reject=y
+> CONFIG_PACKAGE_kmod-nf-reject6=y
+> CONFIG_PACKAGE_kmod-nfnetlink=y
+> CONFIG_PACKAGE_kmod-nft-core=y
+207d157
+< CONFIG_PACKAGE_kmod-nls-cp1251=y
+209d158
+< CONFIG_PACKAGE_kmod-nls-cp866=y
+211,213c160
+< CONFIG_PACKAGE_kmod-nls-iso8859-13=y
+< CONFIG_PACKAGE_kmod-nls-iso8859-15=y
+< CONFIG_PACKAGE_kmod-nls-iso8859-2=y
+---
+> CONFIG_PACKAGE_kmod-nls-koi8r=y
+215,219c162,166
+< # CONFIG_PACKAGE_kmod-phy-marvell is not set
+< # CONFIG_PACKAGE_kmod-phylink is not set
+< # CONFIG_PACKAGE_kmod-ppp is not set
+< # CONFIG_PACKAGE_kmod-pps is not set
+< # CONFIG_PACKAGE_kmod-ptp is not set
+---
+> CONFIG_PACKAGE_kmod-regmap-core=y
+> CONFIG_PACKAGE_kmod-rtc-rs5c372a=y
+> CONFIG_PACKAGE_kmod-sched=y
+> CONFIG_PACKAGE_kmod-sched-cake=y
+> CONFIG_PACKAGE_kmod-sched-core=y
+222,223c169,170
+< CONFIG_PACKAGE_kmod-usb-acm=y
+< CONFIG_PACKAGE_kmod-usb-common=y
+---
+> CONFIG_PACKAGE_kmod-udptunnel4=y
+> CONFIG_PACKAGE_kmod-udptunnel6=y
+225,234c172,174
+< CONFIG_PACKAGE_kmod-usb-ledtrig-usbport=y
+< CONFIG_PACKAGE_kmod-usb-net=y
+< CONFIG_PACKAGE_kmod-usb-net-cdc-ether=y
+< CONFIG_PACKAGE_kmod-usb-net-cdc-ncm=y
+< CONFIG_PACKAGE_kmod-usb-net-ipheth=y
+< CONFIG_PACKAGE_kmod-usb-net-qmi-wwan=y
+< CONFIG_PACKAGE_kmod-usb-serial=y
+< CONFIG_PACKAGE_kmod-usb-serial-ftdi=y
+< CONFIG_PACKAGE_kmod-usb-serial-option=y
+< CONFIG_PACKAGE_kmod-usb-serial-wwan=y
+---
+> CONFIG_PACKAGE_kmod-usb-ehci=y
+> CONFIG_PACKAGE_kmod-usb-ohci=y
+> CONFIG_PACKAGE_kmod-usb-ohci-pci=y
+238,242c178,183
+< CONFIG_PACKAGE_kmod-usb-wdm=y
+< CONFIG_PACKAGE_kmod-video-core=y
+< CONFIG_PACKAGE_kmod-video-uvc=y
+< CONFIG_PACKAGE_kmod-video-videobuf2=y
+< # CONFIG_PACKAGE_knot-resolver_dnstap is not set
+---
+> CONFIG_PACKAGE_kmod-usb-uhci=y
+> CONFIG_PACKAGE_kmod-usb2=y
+> CONFIG_PACKAGE_kmod-usb3=y
+> CONFIG_PACKAGE_kmod-usbip=y
+> CONFIG_PACKAGE_kmod-usbip-server=y
+> CONFIG_PACKAGE_kmod-zram=y
+244,245c185,187
+< CONFIG_PACKAGE_libarchive=y
+< CONFIG_PACKAGE_libatomic=y
+---
+> CONFIG_PACKAGE_lftp=y
+> CONFIG_PACKAGE_libaio=y
+> CONFIG_PACKAGE_libatomic1=y
+247,250c189,195
+< CONFIG_PACKAGE_libbfd=y
+< CONFIG_PACKAGE_libblkid=y
+< CONFIG_PACKAGE_libbpf=y
+< CONFIG_PACKAGE_libbz2=y
+---
+> CONFIG_PACKAGE_libavahi-client=y
+> CONFIG_PACKAGE_libavahi-dbus-support=y
+> CONFIG_PACKAGE_libblkid1=y
+> CONFIG_PACKAGE_libblobmsg-json20210516=y
+> CONFIG_PACKAGE_libbpf0=y
+> CONFIG_PACKAGE_libbz2-1.0=y
+> CONFIG_PACKAGE_libc=y
+253,257c198,205
+< CONFIG_PACKAGE_libcomerr=y
+< CONFIG_PACKAGE_libctf=y
+< CONFIG_PACKAGE_libcurl=y
+< CONFIG_PACKAGE_libe2p=y
+< CONFIG_PACKAGE_libelf=y
+---
+> CONFIG_PACKAGE_libcomerr0=y
+> CONFIG_PACKAGE_libcurl4=y
+> CONFIG_PACKAGE_libdaemon=y
+> CONFIG_PACKAGE_libdbus=y
+> CONFIG_PACKAGE_libdcwproto=y
+> CONFIG_PACKAGE_libdcwsocket=y
+> CONFIG_PACKAGE_libdevmapper=y
+> CONFIG_PACKAGE_libelf1=y
+259d206
+< CONFIG_PACKAGE_libevent2-core=y
+261,262c208,210
+< CONFIG_PACKAGE_libext2fs=y
+< CONFIG_PACKAGE_libfdisk=y
+---
+> CONFIG_PACKAGE_libext2fs2=y
+> CONFIG_PACKAGE_libf2fs6=y
+> CONFIG_PACKAGE_libfdisk1=y
+264,277c212,217
+< CONFIG_PACKAGE_libfuse3=y
+< CONFIG_PACKAGE_libgcrypt=y
+< CONFIG_PACKAGE_libgmp=y
+< CONFIG_PACKAGE_libgpg-error=y
+< CONFIG_PACKAGE_libimobiledevice=y
+< CONFIG_PACKAGE_libimobiledevice-glue=y
+< CONFIG_PACKAGE_libimobiledevice-utils=y
+< CONFIG_PACKAGE_libip4tc=y
+< CONFIG_PACKAGE_libip6tc=y
+< CONFIG_PACKAGE_libipset=y
+< CONFIG_PACKAGE_libiptext=y
+< CONFIG_PACKAGE_libiptext-nft=y
+< CONFIG_PACKAGE_libiptext6=y
+< CONFIG_PACKAGE_libiwinfo=y
+---
+> CONFIG_PACKAGE_libgcc1=y
+> CONFIG_PACKAGE_libgmp10=y
+> CONFIG_PACKAGE_libgnutls=y
+> CONFIG_PACKAGE_libip4tc2=y
+> CONFIG_PACKAGE_libip6tc2=y
+> CONFIG_PACKAGE_libipset13=y
+279,284c219,224
+< CONFIG_PACKAGE_libjpeg-turbo=y
+< CONFIG_PACKAGE_libkmod=y
+< CONFIG_PACKAGE_liblua=y
+< CONFIG_PACKAGE_liblua5.3=y
+< CONFIG_PACKAGE_liblua5.4=y
+< CONFIG_PACKAGE_liblucihttp=y
+---
+> CONFIG_PACKAGE_libiwinfo-lua=y
+> CONFIG_PACKAGE_libiwinfo20210430=y
+> CONFIG_PACKAGE_libjson-c5=y
+> CONFIG_PACKAGE_libjson-script20210516=y
+> CONFIG_PACKAGE_libltdl7=y
+> CONFIG_PACKAGE_liblua5.1.5=y
+286,287c226,227
+< CONFIG_PACKAGE_liblucihttp-ucode=y
+< CONFIG_PACKAGE_liblz4=y
+---
+> CONFIG_PACKAGE_liblucihttp0=y
+> CONFIG_PACKAGE_liblz4-1=y
+289,301c229,242
+< CONFIG_PACKAGE_liblzo=y
+< # CONFIG_PACKAGE_libmbedtls is not set
+< CONFIG_PACKAGE_libmount=y
+< CONFIG_PACKAGE_libmpfr=y
+< CONFIG_PACKAGE_libncurses=y
+< CONFIG_PACKAGE_libnghttp2=y
+< CONFIG_PACKAGE_libnl-cli=y
+< CONFIG_PACKAGE_libnl-core=y
+< CONFIG_PACKAGE_libnl-genl=y
+< CONFIG_PACKAGE_libnl-nf=y
+< CONFIG_PACKAGE_libnl-route=y
+< CONFIG_PACKAGE_libopcodes=y
+< CONFIG_PACKAGE_libopenssl=y
+---
+> CONFIG_PACKAGE_liblzo2=y
+> CONFIG_PACKAGE_libmnl0=y
+> CONFIG_PACKAGE_libmount1=y
+> CONFIG_PACKAGE_libnatpmp1=y
+> CONFIG_PACKAGE_libncurses6=y
+> CONFIG_PACKAGE_libnetfilter-conntrack3=y
+> CONFIG_PACKAGE_libnetfilter-cthelper0=y
+> CONFIG_PACKAGE_libnetfilter-cttimeout1=y
+> CONFIG_PACKAGE_libnetfilter-queue1=y
+> CONFIG_PACKAGE_libnettle8=y
+> CONFIG_PACKAGE_libnfnetlink0=y
+> CONFIG_PACKAGE_libnftnl11=y
+> CONFIG_PACKAGE_libnghttp2-14=y
+> CONFIG_PACKAGE_libnl-tiny1=y
+303,308c244,247
+< CONFIG_PACKAGE_libopenssl-gost_engine=y
+< CONFIG_PACKAGE_libopenssl-legacy=y
+< CONFIG_PACKAGE_libpcap=y
+< CONFIG_PACKAGE_libpci=y
+< CONFIG_PACKAGE_libpcre2=y
+< CONFIG_PACKAGE_libplist=y
+---
+> CONFIG_PACKAGE_libopenssl1.1=y
+> CONFIG_PACKAGE_libpcap1=y
+> CONFIG_PACKAGE_libpcre=y
+> CONFIG_PACKAGE_libpopt0=y
+310,311c249,250
+< CONFIG_PACKAGE_libpython3=y
+< CONFIG_PACKAGE_libreadline=y
+---
+> CONFIG_PACKAGE_libreadline8=y
+> CONFIG_PACKAGE_librrd1=y
+313,317c252,259
+< CONFIG_PACKAGE_libsmartcols=y
+< CONFIG_PACKAGE_libss=y
+< CONFIG_PACKAGE_libssh2=y
+< CONFIG_PACKAGE_libstdcpp=y
+< CONFIG_PACKAGE_libtatsu=y
+---
+> CONFIG_PACKAGE_libsmartcols1=y
+> CONFIG_PACKAGE_libss2=y
+> CONFIG_PACKAGE_libssh2-1=y
+> CONFIG_PACKAGE_libstdcpp6=y
+> CONFIG_PACKAGE_libsysfs2=y
+> CONFIG_PACKAGE_libtasn1=y
+> CONFIG_PACKAGE_libtirpc=y
+> CONFIG_PACKAGE_libubox20210516=y
+318a261,263
+> CONFIG_PACKAGE_libubus20210630=y
+> CONFIG_PACKAGE_libuci20130104=y
+> CONFIG_PACKAGE_libuclient20201210=y
+320,328c265,275
+< CONFIG_PACKAGE_libusb-1.0=y
+< CONFIG_PACKAGE_libusbmuxd=y
+< CONFIG_PACKAGE_libusbmuxd-utils=y
+< # CONFIG_PACKAGE_libustream-mbedtls is not set
+< CONFIG_PACKAGE_libustream-openssl=y
+< CONFIG_PACKAGE_libuuid=y
+< CONFIG_PACKAGE_libxml2=y
+< CONFIG_PACKAGE_libxtables=y
+< CONFIG_PACKAGE_linux_colour=y
+---
+> CONFIG_PACKAGE_liburing=y
+> CONFIG_PACKAGE_libusb-1.0-0=y
+> CONFIG_PACKAGE_libustream-wolfssl20201210=y
+> CONFIG_PACKAGE_libuuid1=y
+> CONFIG_PACKAGE_libuv1=y
+> CONFIG_PACKAGE_libwolfssl5.5.3.99a5b54a=y
+> CONFIG_PACKAGE_libwrap=y
+> CONFIG_PACKAGE_libxtables12=y
+> CONFIG_PACKAGE_libzstd=y
+> CONFIG_PACKAGE_logd=y
+> CONFIG_PACKAGE_lsblk=y
+331c278
+< CONFIG_PACKAGE_luci-app-acme=y
+---
+> CONFIG_PACKAGE_luci-app-acl=y
+333c280,282
+< CONFIG_PACKAGE_luci-app-attendedsysupgrade=y
+---
+> CONFIG_PACKAGE_luci-app-banip=y
+> CONFIG_PACKAGE_luci-app-ddns=y
+> CONFIG_PACKAGE_luci-app-diag-core=y
+335,337c284
+< CONFIG_PACKAGE_luci-app-ledtrig-switch=y
+< CONFIG_PACKAGE_luci-app-ledtrig-usbport=y
+< CONFIG_PACKAGE_luci-app-mjpg-streamer=y
+---
+> CONFIG_PACKAGE_luci-app-ntpc=y
+339,340c286,292
+< CONFIG_PACKAGE_luci-app-package-manager=y
+< CONFIG_PACKAGE_luci-app-wol=y
+---
+> CONFIG_PACKAGE_luci-app-opkg=y
+> CONFIG_PACKAGE_luci-app-pbr=y
+> CONFIG_PACKAGE_luci-app-samba4=y
+> CONFIG_PACKAGE_luci-app-sqm=y
+> CONFIG_PACKAGE_luci-app-statistics=y
+> CONFIG_PACKAGE_luci-app-upnp=y
+> CONFIG_PACKAGE_luci-app-watchcat=y
+344a297
+> CONFIG_PACKAGE_luci-lib-ipkg=y
+347,349d299
+< CONFIG_PACKAGE_luci-lib-uqr=y
+< CONFIG_PACKAGE_luci-light=y
+< CONFIG_PACKAGE_luci-lua-runtime=y
+356,357c306
+< CONFIG_PACKAGE_luci-proto-qmi=y
+< CONFIG_PACKAGE_luci-ssl-openssl=y
+---
+> CONFIG_PACKAGE_luci-ssl=y
+359,370c308,320
+< CONFIG_PACKAGE_mjpg-streamer=y
+< CONFIG_PACKAGE_mjpg-streamer-input-uvc=y
+< CONFIG_PACKAGE_mjpg-streamer-output-http=y
+< CONFIG_PACKAGE_mjpg-streamer-www=y
+< CONFIG_PACKAGE_modemdata=y
+< CONFIG_PACKAGE_mtr-json=y
+< CONFIG_PACKAGE_nano-full=y
+< CONFIG_PACKAGE_ncat-full=y
+< CONFIG_PACKAGE_ndiff=y
+< CONFIG_PACKAGE_netcat=y
+< CONFIG_PACKAGE_nmap-full=y
+< CONFIG_PACKAGE_nping-ssl=y
+---
+> CONFIG_PACKAGE_luci-theme-material=y
+> CONFIG_PACKAGE_lvm2=y
+> CONFIG_PACKAGE_lz4=y
+> CONFIG_PACKAGE_mc=y
+> CONFIG_PACKAGE_miniupnpd=y
+> CONFIG_PACKAGE_mkf2fs=y
+> CONFIG_PACKAGE_mtd=y
+> CONFIG_PACKAGE_mwifiex-sdio-firmware=y
+> CONFIG_PACKAGE_mwlwifi-firmware-88w8964=y
+> CONFIG_PACKAGE_natpmpc=y
+> CONFIG_PACKAGE_netdata=y
+> CONFIG_PACKAGE_netifd=y
+> CONFIG_PACKAGE_nftables-nojson=y
+372,373c322,324
+< CONFIG_PACKAGE_objdump=y
+< CONFIG_PACKAGE_openssh-sftp-server=y
+---
+> CONFIG_PACKAGE_ntpclient=y
+> CONFIG_PACKAGE_odhcp6c=y
+> CONFIG_PACKAGE_odhcpd-ipv6only=y
+376a328
+> CONFIG_PACKAGE_openwrt-keyring=y
+378,379c330,331
+< CONFIG_PACKAGE_pciids=y
+< CONFIG_PACKAGE_pciutils=y
+---
+> CONFIG_PACKAGE_partx-utils=y
+> CONFIG_PACKAGE_pbr-iptables=y
+380a333,334
+> CONFIG_PACKAGE_perl-net-cidr-lite=y
+> CONFIG_PACKAGE_perl-text-csv_xs=y
+383d336
+< CONFIG_PACKAGE_perlbase-class=y
+389d341
+< CONFIG_PACKAGE_perlbase-filehandle=y
+393d344
+< CONFIG_PACKAGE_perlbase-net=y
+400d350
+< CONFIG_PACKAGE_perlbase-time=y
+402,404c352
+< CONFIG_PACKAGE_pixiewps=y
+< CONFIG_PACKAGE_plistutil=y
+< # CONFIG_PACKAGE_ppp is not set
+---
+> CONFIG_PACKAGE_procd=y
+406,416c354
+< CONFIG_PACKAGE_procps-ng-ps=y
+< CONFIG_PACKAGE_procps-ng-snice=y
+< CONFIG_PACKAGE_procps-ng-vmstat=y
+< CONFIG_PACKAGE_procps-ng-w=y
+< CONFIG_PACKAGE_px5g-standalone=y
+< CONFIG_PACKAGE_python3-base=y
+< CONFIG_PACKAGE_python3-email=y
+< CONFIG_PACKAGE_python3-light=y
+< CONFIG_PACKAGE_python3-urllib=y
+< CONFIG_PACKAGE_python3-xml=y
+< CONFIG_PACKAGE_reaver=y
+---
+> CONFIG_PACKAGE_px5g-wolfssl=y
+424,427c362,375
+< CONFIG_PACKAGE_rpcd-mod-ucode=y
+< CONFIG_PACKAGE_screen=y
+< CONFIG_PACKAGE_sms-tool=y
+< CONFIG_PACKAGE_socat=y
+---
+> CONFIG_PACKAGE_rrdtool1=y
+> CONFIG_PACKAGE_rsync=y
+> CONFIG_PACKAGE_samba4-libs=y
+> CONFIG_PACKAGE_samba4-server=y
+> CONFIG_PACKAGE_smartd=y
+> CONFIG_PACKAGE_smartmontools=y
+> CONFIG_PACKAGE_smartmontools-drivedb=y
+> CONFIG_PACKAGE_sqm-scripts=y
+> CONFIG_PACKAGE_squashfs-tools-mksquashfs=y
+> CONFIG_PACKAGE_squashfs-tools-unsquashfs=y
+> CONFIG_PACKAGE_sysstat=y
+> CONFIG_PACKAGE_tar=y
+> CONFIG_PACKAGE_tc-full=y
+> CONFIG_PACKAGE_tc-mod-iptables=y
+430,434c378,385
+< CONFIG_PACKAGE_tmux=y
+< CONFIG_PACKAGE_ucode-mod-html=y
+< CONFIG_PACKAGE_ucode-mod-log=y
+< CONFIG_PACKAGE_ucode-mod-lua=y
+< CONFIG_PACKAGE_ucode-mod-math=y
+---
+> CONFIG_PACKAGE_ubi-utils=y
+> CONFIG_PACKAGE_uboot-envtools=y
+> CONFIG_PACKAGE_ubox=y
+> CONFIG_PACKAGE_ubus=y
+> CONFIG_PACKAGE_ubusd=y
+> CONFIG_PACKAGE_uci=y
+> CONFIG_PACKAGE_uclibcxx=y
+> CONFIG_PACKAGE_uclient-fetch=y
+437c388,390
+< CONFIG_PACKAGE_uqmi=y
+---
+> CONFIG_PACKAGE_urandom-seed=y
+> CONFIG_PACKAGE_urngd=y
+> CONFIG_PACKAGE_usb-modeswitch=y
+439d391
+< CONFIG_PACKAGE_usbmuxd=y
+441,442c393,395
+< CONFIG_PACKAGE_wakeonlan=y
+< CONFIG_PACKAGE_wavemon=y
+---
+> CONFIG_PACKAGE_usign=y
+> CONFIG_PACKAGE_vim-fuller=y
+> CONFIG_PACKAGE_watchcat=y
+444c397,398
+< CONFIG_PACKAGE_whois=y
+---
+> CONFIG_PACKAGE_which=y
+> CONFIG_PACKAGE_wireless-regdb=y
+446,462c400,405
+< # CONFIG_PACKAGE_wpad-basic-mbedtls is not set
+< CONFIG_PACKAGE_wpad-basic-openssl=y
+< CONFIG_PACKAGE_wwan=y
+< CONFIG_PACKAGE_xtables-legacy=y
+< CONFIG_PACKAGE_xtables-nft=y
+< CONFIG_PCRE2_JIT_ENABLED=y
+< CONFIG_PERL_NOCOMMENT=y
+< CONFIG_PERL_THREADS=y
+< # CONFIG_USE_APK is not set
+< # CONFIG_USE_FS_ACL_ATTR is not set
+< # CONFIG_WIFI_SCRIPTS_UCODE is not set
+< # CONFIG_WPA_MBO_SUPPORT is not set
+< # CONFIG_OPENSSL_WITH_IDEA is not set
+< # CONFIG_OPENSSL_WITH_MDC2 is not set
+< # CONFIG_OPENSSL_WITH_SEED is not set
+< # CONFIG_OPENSSL_WITH_WHIRLPOOL is not set
+< # CONFIG_OPENVPN_openssl_ENABLE_DCO is not set
+---
+> CONFIG_PACKAGE_wpa-cli=y
+> CONFIG_PACKAGE_wpad-basic=y
+> CONFIG_PACKAGE_wsdd2=y
+> CONFIG_PACKAGE_zlib=y
+> CONFIG_PACKAGE_zram-swap=y
+> CONFIG_PACKAGE_zsh=y
+\ No newline at end of file
